@@ -57,7 +57,7 @@ const VerifyOTP = () => {
     try {
       setIsLoading(true);
       const res = await axios.post(
-        `http://localhost:5000/user/verify-otp/${email}`,
+        `https://modern-auth-frontend.vercel.app/user/verify-otp/${email}`,
         {
           otp: finalOtp,
         },

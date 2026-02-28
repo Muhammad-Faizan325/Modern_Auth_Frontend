@@ -40,7 +40,7 @@ const ForgotPassword = () => {
     try {
       setIsLoading(true);
       const res = await axios.post(
-        `http://localhost:5000/user/forgot-password`,
+        `https://modern-auth-frontend.vercel.app/user/forgot-password`,
         { email },
       );
       if (res.data.success) {

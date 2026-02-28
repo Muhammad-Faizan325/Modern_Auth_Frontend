@@ -15,7 +15,7 @@ const Verify = () => {
       try {
         // Thora delay for smooth animation transitions
         const res = await axios.post(
-          `http://localhost:5000/user/verify`,
+          `https://modern-auth-frontend.vercel.app/user/verify`,
           {},
           {
             headers: {

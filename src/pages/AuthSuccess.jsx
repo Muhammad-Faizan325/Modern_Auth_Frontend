@@ -17,7 +17,7 @@ const AuthSuccess = () => {
             if (accessToken) {
                 localStorage.setItem("accessToken", accessToken)
                 try {
-                    const res = await axios.get("http://localhost:5000/auth/me", {
+                    const res = await axios.get("https://modern-auth-frontend.vercel.app/auth/me", {
                         headers: {
                             Authorization: `Bearer ${accessToken}`
                         }

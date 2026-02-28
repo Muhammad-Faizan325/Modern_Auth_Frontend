@@ -39,7 +39,7 @@ const ChangePassword = () => {
     try {
       setIsLoading(true);
       const res = await axios.post(
-        `http://localhost:5000/user/change-password/${email}`,
+        `https://modern-auth-frontend.vercel.app/user/change-password/${email}`,
         {
           newPassword,
           confirmPassword,
