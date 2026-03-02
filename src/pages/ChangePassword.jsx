@@ -39,7 +39,7 @@ const ChangePassword = () => {
     try {
       setIsLoading(true);
       const res = await axios.post(
-        `import.meta.env.BASE_URLuser/change-password/${email}`,
+        `${import.meta.env.VITE_BASE_UR}/user/change-password/${email}`,
         {
           newPassword,
           confirmPassword,

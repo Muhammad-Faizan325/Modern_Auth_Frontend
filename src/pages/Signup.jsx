@@ -55,7 +55,7 @@ const Signup = () => {
       setIsLoading(true);
 
       const res = await axios.post(
-        `https://modern-auth-backend.vercel.app/user/register`,
+        `${import.meta.env.VITE_BASE_URL}/user/register`,
 
         formData,
 

@@ -15,7 +15,7 @@ const Verify = () => {
       try {
         // Thora delay for smooth animation transitions
         const res = await axios.post(
-          `import.meta.env.BASE_URLuser/verify`,
+          `${import.meta.env.VITE_BASE_URL}/user/verify`,
           {},
           {
             headers: {

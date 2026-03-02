@@ -40,7 +40,7 @@ const Login = () => {
     try {
       setIsLoading(true);
       const res = await axios.post(
-        `import.meta.env.BASE_URLuser/login`,
+        `${import.meta.env.VITE_BASE_URL}/user/login`,
         formData,
         {
           headers: { "Content-Type": "application/json" },

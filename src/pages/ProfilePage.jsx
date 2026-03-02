@@ -30,7 +30,7 @@ const ProfilePage = () => {
     try {
       setIsLoggingOut(true);
       const res = await axios.post(
-        `import.meta.env.BASE_URLuser/logout`,
+        `${import.meta.env.VITE_BASE_URL}/user/logout`,
         {},
         {
           headers: {

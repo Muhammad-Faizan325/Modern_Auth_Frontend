@@ -57,7 +57,7 @@ const VerifyOTP = () => {
     try {
       setIsLoading(true);
       const res = await axios.post(
-        `import.meta.env.BASE_URLuser/verify-otp/${email}`,
+        `${import.meta.env.VITE_BASE_URL}/user/verify-otp/${email}`,
         {
           otp: finalOtp,
         },

@@ -23,7 +23,7 @@ const ForgotPassword = () => {
   const [isSubmitted, setIsSubmitted] = useState(false);
   const navigate = useNavigate();
 
-  // Redirect Logic: Jab email send ho jaye toh 3 seconds baad redirect karega
+ 
   useEffect(() => {
     let timeout;
     if (isSubmitted) {
@@ -31,7 +31,7 @@ const ForgotPassword = () => {
         navigate(`/verify-otp/${email}`);
       }, 3000);
     }
-    return () => clearTimeout(timeout); // Cleanup timeout on unmount
+    return () => clearTimeout(timeout); 
   }, [isSubmitted, navigate, email]);
 
   const handleForgotPassword = async (e) => {
@@ -40,7 +40,7 @@ const ForgotPassword = () => {
     try {
       setIsLoading(true);
       const res = await axios.post(
-        `import.meta.env.BASE_URLuser/forgot-password`,
+        `${import.meta.env.VITE_BASE_URL}/user/forgot-password`,
         { email },
       );
       if (res.data.success) {
