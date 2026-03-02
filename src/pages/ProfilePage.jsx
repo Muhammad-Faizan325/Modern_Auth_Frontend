@@ -30,7 +30,7 @@ const ProfilePage = () => {
     try {
       setIsLoggingOut(true);
       const res = await axios.post(
-        `https://modern-auth-frontend.vercel.app/user/logout`,
+        `import.meta.env.BASE_URLuser/logout`,
         {},
         {
           headers: {

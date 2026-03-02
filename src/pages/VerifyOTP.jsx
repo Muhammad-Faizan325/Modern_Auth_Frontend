@@ -57,7 +57,7 @@ const VerifyOTP = () => {
     try {
       setIsLoading(true);
       const res = await axios.post(
-        `https://modern-auth-frontend.vercel.app/user/verify-otp/${email}`,
+        `import.meta.env.BASE_URLuser/verify-otp/${email}`,
         {
           otp: finalOtp,
         },

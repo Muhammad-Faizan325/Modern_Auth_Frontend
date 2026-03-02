@@ -21,7 +21,7 @@ const Navbar = () => {
   const logoutHandler = async () => {
     try {
       const res = await axios.post(
-        `http://localhost:5000/user/logout`,
+        `import.meta.env.BASE_URLuser/logout`,
         {},
         {
           headers: {
