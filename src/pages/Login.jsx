@@ -40,7 +40,7 @@ const Login = () => {
     try {
       setIsLoading(true);
       const res = await axios.post(
-        `${import.meta.env.VITE_BASE_URL}/user/login`,
+        `${import.meta.env.VITE_VITE_BASE_URL}/user/login`,
         formData,
         {
           headers: { "Content-Type": "application/json" },
@@ -174,7 +174,7 @@ const Login = () => {
             {/* Google Button */}
             <Button
               onClick={() =>
-                window.open("import.meta.env.BASE_URLauth/google", "_self")
+                window.open("import.meta.env.VITE_BASE_URLauth/google", "_self")
               }
               variant="outline"
               className="w-full h-12 border-white/10 bg-white/5 hover:bg-white/10 text-white rounded-xl transition-all flex gap-3"
